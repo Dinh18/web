@@ -1,0 +1,37 @@
+﻿<head>
+	<title>Free Home Shoppe Website Template | Home :: w3layouts</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="~/css/style.css" rel="stylesheet" type="text/css" media="all">
+	<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+<body>
+	<!-- begin header -->
+	@await Component.InvokeAsync("Render");
+
+	<!-- end header -->
+	<!-- main -->
+	<main id="main" class="ads-grid">
+		@RenderBody()
+	</main>
+	<!-- //main -->
+	<!-- footer -->
+	<footer id="footer">
+		<partial name="NguyenTheDinh_Footer" />
+	</footer>
+	<!-- //footer -->
+	<!-- js-files -->
+	<!-- jquery -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- //jquery -->
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+	<!-- //js-files -->
+</body>
+
+</html>
+<script src="~/js/bootstrap.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+@RenderSection("Scripts",required:false)

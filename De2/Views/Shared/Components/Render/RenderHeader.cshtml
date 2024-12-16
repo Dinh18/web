@@ -1,0 +1,16 @@
+﻿@model IEnumerable<NavItem>
+
+<div class="header">
+	<div class="header-most-top">
+		<p>Nguyễn Thế Định - 221230802</p>
+	</div>
+	<div class="header-bot">
+		<ul>
+			<li><a>Nguyễn Thế Định</a></li>
+			@foreach(var i in Model)
+			{
+				<li><a>@i.NavNameVn</a></li>
+			}
+		</ul>
+	</div>
+</div>
